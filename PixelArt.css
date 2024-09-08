@@ -1,0 +1,57 @@
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 10px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* background-color: #de4738; */
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pixel-holder {
+    display: flex;
+    flex-direction: column;
+    background-color: #de4738;
+}
+
+.pixel,
+input {
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    appearance: none;
+    background-color: #de4738;
+    border-right: 2px solid #eb675b;
+    border-bottom: 2px solid #eb675b;
+    cursor: pointer;
+}
+
+.pixel:hover {
+    background-color: #e65c50;
+}
+
+input:checked {
+    background-color: #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+input:checked:hover {
+    background-color: #fff;
+}
+
+body .pixel-holder:last-child .pixel {
+
+    border-right: 2px solid #de4738;
+}
